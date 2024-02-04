@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: url('Back1.jpg');
+    background-position: center;
+    background-repeat: repeat;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: transparent;
+    color: black;
+}
+
+.logo {
+    font-size: 20px;
+    user-select: none;
+    color: red;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation a {
+    position: relative;
+    font-weight: 500;
+    color: black;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navigation .loginbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 50px;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: none;
+    font-size: 1rem;
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation .loginbtn:hover {
+    color: white;
+    background-color: black;
+}
+
+.head {
+    min-width: 210vh;
+    min-height: 75vh;
+    background-image: url('Back2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 180px;
+    gap: 10px;
+    column-gap: 2px;
+}
+
+.head h3 {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.head p {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.get-started-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    transition: background-color 0.3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.get-started-btn:hover {
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+section{
+    margin: 20px 20px;
+}
+
+@media screen and (max-width: 480px) {
+    hbody {
+        font-size: 10px;
+      }
+      
+      header {
+        padding: 20px 20px;
+        max-height: 30px;
+        font-size: 3px;
+        max-width: 450px;
+      }
+    
+      .logo,
+      .navigation a,
+      .navigation .loginbtn{
+        font-size: 10px;    
+      }
+      
+      .navigation .loginbtn {
+          width: 90px;
+          height: 20px;
+          border: 0.5px solid white;
+      }
+      
+      .head {
+        max-height: 10vh;
+        padding: 50px;
+      }
+    
+      .head h2 {
+        font-size: 1rem;
+      }
+    
+      .get-started-btn {
+        padding: 10px 10px;
+        font-size: 0.7rem;
+      }
+}
