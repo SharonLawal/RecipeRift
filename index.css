@@ -11,11 +11,19 @@ body{
     align-items: center;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
     overflow-y: auto;
     background-image: url('Back1.jpg');
-    background-position: center;
+    background-position: initial;
     background-repeat: repeat;
+}
+
+.Home {
+    margin-top: 0;
+    background-image: url('Back2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 210vh;
+    left: 0;
 }
 
 header {
@@ -27,7 +35,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 99;
     background-color: transparent;
     color: black;
 }
@@ -76,12 +83,6 @@ header {
 }
 
 .head {
-    min-width: 210vh;
-    min-height: 75vh;
-    background-image: url('Back2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -89,6 +90,7 @@ header {
     padding: 180px;
     gap: 10px;
     column-gap: 2px;
+    margin: 0 auto;
 }
 
 .head h3 {
@@ -129,41 +131,62 @@ section{
     margin: 20px 20px;
 }
 
-@media screen and (max-width: 480px) {
-    hbody {
-        font-size: 10px;
-      }
-      
-      header {
-        padding: 20px 20px;
-        max-height: 30px;
-        font-size: 3px;
-        max-width: 450px;
-      }
-    
-      .logo,
-      .navigation a,
-      .navigation .loginbtn{
-        font-size: 10px;    
-      }
-      
-      .navigation .loginbtn {
-          width: 90px;
-          height: 20px;
-          border: 0.5px solid white;
-      }
-      
-      .head {
-        max-height: 10vh;
-        padding: 50px;
-      }
-    
-      .head h2 {
-        font-size: 1rem;
-      }
-    
-      .get-started-btn {
-        padding: 10px 10px;
-        font-size: 0.7rem;
-      }
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 20px 20px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box {
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    border-radius: 5rem;
+    background-color: wheat;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+
+.box .content {
+    text-align: center;
+    color: black;
+    padding: 2rem;
+}
+
+.content i{
+    margin: 5px 0;
+    font-size: 2rem;
+}
+
+.content p {
+    padding: 1rem 0;
+}
+
+.box:hover img {
+    top: 0;
+    transition: 0.5s;
+}
+
+.box:hover .content {
+    transform: translateY(100%);
 }

@@ -1,0 +1,51 @@
+@media screen and (max-width: 650px) {
+    body {
+        font-size: 8px;
+        max-width: 80%;
+      }
+    
+      .Home {
+        min-width: 500px;
+        height: 30vh;
+        margin: 0;
+      }
+
+      header {
+        padding: 20px 20px;
+        max-height: 30px;
+        font-size: 3px;
+        max-width: 450px;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .logo,
+      .navigation a,
+      .navigation .loginbtn{
+        font-size: 8px;    
+      }
+      
+      .navigation .loginbtn {
+          width: 70px;
+          height: 20px;
+          border: 0.5px solid black;
+      }
+      
+      .head {
+        max-height: 10vh;
+        padding: 50px 50px;
+      }
+    
+      .head h3 {
+        font-size: 0.7rem;
+      }
+
+      .head p {
+        font-size: 0.5rem;
+      }
+    
+      .get-started-btn {
+        padding: 5px 5px;
+        font-size: 0.6rem;
+      }
+}
