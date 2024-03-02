@@ -281,6 +281,25 @@ section{
     height: 40vh;
 }
 
+#message {
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px none black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  margin-left: 75px;
+}
+
 #message p {
     font-size: 1.2rem;
     color: #666;
@@ -325,7 +344,7 @@ section{
   }
 
 footer {
-    background-color: whitesmoke;
+    background-color: rgb(209, 199, 199);
     color: #333;
     padding: 20px 0;
     text-align: center;
