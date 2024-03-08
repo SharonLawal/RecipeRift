@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN IN/SIGN UP</title>
     <link rel = "stylesheet" href = "Login.css">
+    <link rel = "stylesheet" href = "Loginmediaqueries.css">
 </head>
 <body>
     <div class="container">
@@ -14,15 +15,15 @@
               <h2 class="title">Sign in</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Username" required />
               </div>
 
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Password" minlength="6" required/>
               </div>
 
-              <input type="submit" value="Login" class="btn solid" />
+              <input type="submit" value="Login" class="btn solid" id = "sign-in"/>
               <p class="social-text">Or Sign in with social platforms</p>
               <div class="social-media">
                 <a href="#" class="social-icon">
@@ -44,17 +45,17 @@
               <h2 class="title">Sign up</h2>
               <div class="input-field">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" />
+                <input type="text" placeholder="Username" required/>
               </div>
 
               <div class="input-field">
                 <i class="fas fa-envelope"></i>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" required/>
               </div>
 
               <div class="input-field">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" />
+                <input type="password" placeholder="Password" minlength="6" required />
               </div>
 
               <input type="submit" class="btn" value="Sign up" />
