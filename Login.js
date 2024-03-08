@@ -15,25 +15,27 @@ document.addEventListener('DOMContentLoaded', function() {
     return input.value.trim() !== '';
   }
 
-  document.querySelector('form').addEventListener('submit', function(event) {
+  document.querySelector('.sign-in-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const usernameInput = document.querySelector('input[type="text"]');
+
+    if (validateInput(usernameInput)) {
+        window.location.href = 'index.html';
+    } else {
+        console.log('Please fill in all fields.');
+    }
+});
+
+
+  document.querySelector('.sign-up-form').addEventListener('submit', function(event) {
       event.preventDefault();
 
       const usernameInput = document.querySelector('input[type="text"]');
 
       if (validateInput(usernameInput)) {
-          window.location.href = 'index.html';
-      } else {
-          console.log('Please fill in all fields.');
-      }
-  });
-
-  document.querySelector('.btn').addEventListener('click', function(event) {
-      event.preventDefault();
-
-      const usernameInput = document.querySelector('input[type="text"]');
-
-      if (validateInput(usernameInput)) {
-        container.classList.add("sign-up-mode");
+        window.location.href = '.sign-in-form';
+        container.classList.remove("sign-up-mode");
       } else {
           console.log('Please fill in all fields.');
       }
