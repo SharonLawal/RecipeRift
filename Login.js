@@ -28,15 +28,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-  document.querySelector('.sign-up-form').addEventListener('submit', function(event) {
-      event.preventDefault();
+  document.querySelector('.sign-up-form').addEventListener('submit', function() {
 
       const usernameInput = document.querySelector('input[type="text"]');
 
       if (validateInput(usernameInput)) {
-        window.location.href = '.sign-in-form';
         container.classList.remove("sign-up-mode");
-      } else {
+      } 
+      else {
           console.log('Please fill in all fields.');
       }
   });
