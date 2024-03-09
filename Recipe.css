@@ -43,13 +43,13 @@ body{
     left: 0;
 }
 
-header {
+#desktop-nav {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;

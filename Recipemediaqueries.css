@@ -24,4 +24,10 @@
     #meal{
         grid-template-columns: repeat(3, 1fr);
     }
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+    display: flex;
+    }
 }
