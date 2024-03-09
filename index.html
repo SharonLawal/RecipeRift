@@ -15,8 +15,8 @@
             <nav class="navigation">
                 <a href="index.html">Home</a>
                 <a href="Recipe.html">Recipes</a>
-                <a href=".speciality">About Us</a>
-                <a href=".info">Contact Us</a>
+                <a href="#speciality">About Us</a>
+                <a href="#info">Contact Us</a>
                 <a class="loginbtn" href="Login.html">Login</a>
             </nav>
         </header>
@@ -34,8 +34,8 @@
                     <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
                     <li><a class="loginbtn" href="Login.html" onclick="toggleMenu()">Login</a></li>
                     <li><a href="Recipe.html" onclick="toggleMenu()">Recipes</a></li>
-                    <li><a href=".speciality" onclick="toggleMenu()">About Us</a></li>
-                    <li><a href=".info" onclick="toggleMenu()">Contact Us</a></li>
+                    <li><a href="#speciality" onclick="toggleMenu()">About Us</a></li>
+                    <li><a href="#info" onclick="toggleMenu()">Contact Us</a></li>
                   </div>
                 </div>
             </nav>
@@ -47,7 +47,7 @@
         </div>
     </section>
 
-    <section class = "speciality">
+    <section class = "speciality" id = speciality>
         <h1 class = "heading">Our <span> Speciality</span></h1>
 
         <div class="box-container">
@@ -126,8 +126,8 @@
     </section>
 
     <footer>
-        <div class="footerContent">
-            <div class="info">
+        <div class="footerContent" >
+            <div class="info" id = "info">
                 <p>RecipeRift</p>
                 <p>Lagos, Nigeria</p>
                 <p>Contact: +234 8084237085</p>
@@ -137,6 +137,7 @@
                 <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
             </div>
         </div>
+        
         <div class="copyright">
             <p>&copy; 2024 RecipeRift All rights reserved.</p>
         </div>

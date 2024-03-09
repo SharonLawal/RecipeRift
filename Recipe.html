@@ -9,13 +9,45 @@
   <link rel = "stylesheet" href = "Recipemediaqueries.css">
 </head>
 <body>
-  
+    <section class = "Home">
+        <header>
+            <h2 class="logo"><ion-icon name="book"></ion-icon>RecipeRift</h2>
+            <nav class="navigation">
+                <a href="index.html">Home</a>
+                <a href="Recipe.html">Recipes</a>
+                <a href="#speciality">About Us</a>
+                <a href="#info">Contact Us</a>
+                <a class="loginbtn" href="Login.html">Login</a>
+            </nav>
+        </header>
+
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+            <h2 class="logo"><ion-icon name="book"></ion-icon>RecipeRift</h2>
+        
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+          </div>
+        
+            <div class="menu-links">
+                <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a class="loginbtn" href="Login.html" onclick="toggleMenu()">Login</a></li>
+                <li><a href="Recipe.html" onclick="toggleMenu()">Recipes</a></li>
+                <li><a href="#speciality" onclick="toggleMenu()">About Us</a></li>
+                <li><a href="#info" onclick="toggleMenu()">Contact Us</a></li>
+            </div>
+            </div>
+        </nav>
+    </section>
+    
   <div class = "container">
     <div class = "meal-wrapper">
       <div class = "meal-search">
         <h2 class = "title">Find Meals For Your Ingredients</h2>
-        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br>
-          <cite>- Jamie Oliver</cite>
+        <blockquote>Food is our common ground, a universal experience.<br>
+          <cite>-James Beard</cite>
         </blockquote>
 
         <div class = "meal-search-box">
@@ -27,7 +59,7 @@
       </div>
 
       <div class = "meal-result">
-        <h2 class = "title">Your Search Results:</h2>
+        <h2 class = "title">Search Results:</h2>
         <div id= "meal">
           <!-- meal item -->
           <!-- <div class = "meal-item">
@@ -56,8 +88,8 @@
           <p class = "recipe-category">Category Name</p>
           <div class = "recipe-instruct">
             <h3>Instructions:</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+            <p>This is the instruction</p>
+            <p>This is the instruction</p>
           </div>
           <div class = "recipe-meal-img">
             <img src = "food.jpg" alt = "">
@@ -70,6 +102,9 @@
     </div>
   </div>
 
-  <script src = "Recipe.js"></script>
+    <script src = "Recipe.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/e47ab6e39b.js" crossorigin="anonymous"></script>
 </body>
 </html>
